@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --bg: white;
+    --bg-dark: rgb(96, 138, 152);
+    --span: #0c486a;
+    --color: lightblue;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: ; */
+    font-family: "Poppins", sans-serif;
+}
+.name p{
+    font-weight: bold;
+}
+
+body {
+    min-height: 100vh;
+    background-color: rgb(96, 138, 152);
+    background-size: cover;
+    background-position: center;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 97%;
+    padding: 10px 25px;
+    background: lightblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    
+}
+.logo{
+    width: 45%;
+}
+.header img{
+    width: 60px;
+    
+}
+
+.logo {
+    font-size: 30px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.navbar a {
+    position: relative;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    height: 2px;
+    background: rgb(96, 138, 152);
+    transition: .5s;
+}
+
+.navbar a:hover::before {
+    width: 100%;
+    transition: .5s;
+}
+.materi{
+    background-color: rgb(96, 138, 152);
+   width: 100%;
+   text-align: center;
+   padding: 100px 0;
+}
+.materi img{
+    height: 400px;
+}
+.materi h1{
+    font-size: 50px;
+    margin-left: 0%;
+    color: #fff75a;
+}
+
+.materi h1 span:after{
+    content: "";
+    animation: gerak infinite 8s ease;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 50px;
+    margin-left: 0%;
+}
+
+@keyframes gerak {
+    0% {
+        content: "KECEBONG";
+    }
+    50% {
+        content: "Kece Ngga Boong";
+    }
+    100% {
+        content: "Kelompok saya kece";
+    }
+}
+.anggota{
+    text-align: center;
+    padding: 4%;
+    color: var(--bg-dark);
+    background-color: rgb(253, 253, 253);
+}
+.anggota,h1{
+    font-size: 170%;
+}
+.nama{
+    /* width: 100%; */
+    justify-content: center;
+    /* display: flex; */
+    
+    margin: -5%;
+    color: var(--bg-dark);
+    background-color: #ffffff;
+    
+}
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.name{
+    border-radius:10px ;
+    width: 900px;
+    text-align: center;
+    height: 160px;
+    margin: 20px;
+    background-color: #e6e6e6;
+}
+.name:hover{
+    color: #fff;
+    background-color: var(--bg-dark);
+    cursor: pointer;
+    transition: .4s;
+}
+
+.nama,p{
+    margin-top: 3%;
+}
+
+.project{
+    margin-top: 0%;
+    color: white;
+    font-size: 140%;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 4rem;
+}
+.project h1{
+    color: var(--bg-dark);
+    padding: 2%;
+    font-size: 200%;
+}
+.tujuanProject{
+    padding: 2%;
+    margin: 20px;
+    height: 160px;
+    background-color: var(--bg-dark);
+    border-radius: 20px;
+    font-weight: bold;
+}
+.tes {
+    display: flex;
+    flex-direction: row;
+}
+.teori{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 4rem;
+    color: var(--bg-dark);
+    background-color: #ffffff;
+}
+.coba3{
+    color: var(--bg-dark);
+    padding-bottom: 2%;
+    font-size: 130%;
+    text-align: center;
+    margin-top: -2%;
+    /* position: absolute; */
+    top: 0;
+}
+.ini{
+    color: var(--bg-dark);
+    font-size: 140%;
+    text-align: center;
+    margin-top: -2%;
+    /* position: absolute; */
+    top: 0;
+}
+.coba1{
+    color: white;
+    padding-bottom: 2%;
+    font-size: 130%;
+    text-align: center;
+    margin-top: -2%;
+    position: absolute;
+    top: 0;
+}
+.isi{
+    text-align: center;
+    font-weight: bold;
+    font-size: 100%;
+    color: var(--bg-dark);
+    padding: 0%;
+    margin-top: 10%;
+    margin: 20px;
+    height: 190px;
+    width: 700px;
+    background-color: var(--color);
+    border-radius: 20px;
+}
+.alat{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0%;
+    font-size: 200%;
+    color: #fff;
+    font-size: 170%;
+    background-color: var(--color);
+    padding: 4rem;
+}
+.alat h1{
+    text-align: center;
+    margin-top: 0%;
+}
+.bahan{
+    font-weight: bold;
+    text-align: center;
+    background-color: var(--bg-dark);
+    margin: 16%;
+    margin-top: 4%;
+    /* flex-direction: row; */
+    padding: 4%;
+    height: 5%;
+    /* width: 10%; */
+    border-radius: 50px;
+}
+.bahan img{
+    width: 20%;
+    align-items: center;
+    justify-content: center;
+    /* margin-top: -15%;
+    margin: 0%; */
+}
+
+.lem p{
+    text-align: left;
+    text-align: center;
+    /* margin-left: -14% ; */
+    /* display: flex; */
+    /* flex-direction: column;
+    justify-items: left; */
+    width: 1000px;
+}
+.hasil{
+    text-align: center;
+    justify-content: center;
+    color: #fff;
+    align-items: center;
+    margin-top: 3%;
+    flex-direction: column;
+    display: flex;
+    position: relative;
+    font-size: 160%;  
+    padding-top: 5rem;
+}
+.pengujian{
+    color: var(--bg-dark);
+    margin-top: 2%;
+    text-align: center;
+    background-color: var(--color);
+    padding: 1%;
+    width: 44%;
+    display: flex;
+    border-radius: 40px;
+    font-weight: bold;
+}
+.dokumentasi{
+    margin: 10%;
+    color: #fff;
+    background-color: var(--color);
+    padding: 1%;
+    border-radius: 50px;
+    font-size: 140%;
+}
+.dokumentasi h1{
+    margin-top: 2%;
+    text-align: center;
+    font-size: 140%;
+}
+.dokum{
+    align-items: center;
+    display: flex;
+}
+.dokum img{
+    display: flex;
+    align-items: center;
+    margin-top: 3%;
+    margin: 2%;
+    border-radius: 40px;
+    width: 50%;
+}
+.kesimpulan{
+    padding: 4%;
+    background-color:var(--color);
+}
+.in{
+    text-align: center;
+    font-size: 150%;
+    color: #fff;
+}
+.kesim{
+    margin-top: 3%;
+    background-color: var(--bg-dark);
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    font-size: 150%;
+    padding: 2%;
+    border-radius: 20px;
+}
+.kesim:hover{
+    color: var(--bg-dark);
+    background-color: #fff;
+    cursor: pointer;
+    transition: .4s;
+}
+.desain{
+    padding: 4rem;
+    background-color: #fff;
+}
+.ni{
+    text-align: center;
+    color: var(--bg-dark);
+    font-size: 150%;
+    padding-top: 2%;
+    margin-top: 0%;
+}
+.dokumen{
+    display: flex;
+    margin-top: 4%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    flex-direction: row;
+    background-color: var(--bg-dark);
+}
+.dokumen img{
+    display: flex;
+    align-items: center;
+    margin-top: 5%;
+    margin: 1%;
+    border-radius: 40px;
+    width: 40%;
+    margin: 5%;
+}
